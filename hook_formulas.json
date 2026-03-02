@@ -1,0 +1,946 @@
+{
+  "metadata": {
+    "file_version": "1.1",
+    "created_date": "2026-01-17",
+    "last_updated": "2026-01-18",
+    "total_formulas": 10,
+    "description": "Proven hook formulas for men's health TikTok content. Each formula is a template with variables that can be filled based on specific video topic. Examples are REFERENCE PATTERNS for AI to learn from, not fixed scripts to copy.",
+    "usage_instructions": "1. Select formula based on dopamine technique needed. 2. Fill variables with specific content for YOUR product/topic. 3. Reference examples to understand pattern, not to copy verbatim. 4. Test and track performance. 5. Document results in examples_hook.md",
+    "learning_approach": "AI learns from examples by: (1) Identifying structural patterns, (2) Understanding WHY examples work via notes, (3) Generating SIMILAR but NEW content for different products/topics. Examples are templates, not scripts."
+  },
+  
+  "formulas": [
+    {
+      "id": "CG-001",
+      "name": "Percentage Question Shock",
+      "dopamine_technique": "Curiosity Gap",
+      "template": "{{percentage}}% {{target_audience}} {{problem_statement}} - {{hook_question}}?",
+      "structure": "[Shocking stat] + [Relatable problem] + [Question to viewer]",
+      
+      "variables": {
+        "percentage": {
+          "range": "60-85",
+          "note": "Phải credible, không quá cao (>90% = không tin), không quá thấp (<50% = không relevant)"
+        },
+        "target_audience": {
+          "options": ["đàn ông Việt", "nam giới trẻ", "anh em", "nam giới sau 30", "quý ông"],
+          "note": "Phải match với audience context trong 00_context.md"
+        },
+        "problem_statement": {
+          "source": "Pain points từ 00_context.md",
+          "examples": ["yếu sinh lý", "rụng tóc", "xuất tinh sớm", "mỡ bụng", "mất ngủ"],
+          "note": "Specific và relatable"
+        },
+        "hook_question": {
+          "options": [
+            "Bạn có biết tại sao",
+            "Anh có phải 1 trong số đó",
+            "Nguyên nhân từ đâu",
+            "Anh đã biết chưa"
+          ]
+        }
+      },
+      
+      "examples": [
+        {
+          "filled_template": "78% đàn ông Việt sau 30 yếu sinh lý - Bạn có biết tại sao?",
+          "video_id": "TK_20250115_001",
+          "performance": {
+            "3s_retention": "58%",
+            "hook_completion": "82%",
+            "total_views": "145000",
+            "classification": "WINNER"
+          },
+          "notes": "Số 78% trong sweet spot, 'sau 30' tạo age relevance. Question tạo curiosity gap mạnh."
+        },
+        {
+          "topic": "Miếng dán chân ngải cứu - Mất ngủ",
+          "filled_template": "72% đàn ông Việt mất ngủ do stress - Bàn chân có 60 huyệt đạo não bộ không chú ý đến",
+          "video_id": null,
+          "performance": null,
+          "notes": "✅ Pattern: Stat → Problem → Tease solution CATEGORY (huyệt đạo), không mention product name. Dopamine từ 'huyệt đạo là gì?'",
+          "comparison_wrong": {
+            "template": "72% đàn ông mất ngủ - Miếng Dán Ngải Cứu Bắc Kinh giải quyết ngay!",
+            "why_fails": "Product name @ 8s = quá sớm. Đóng loop. Không có dopamine build-up. Cảm giác như quảng cáo pitch."
+          },
+          "product_intro_timing": "Body @ 48s: 'Y học cổ truyền có giải pháp: Miếng Dán Ngải Cứu từ Bắc Kinh...'"
+        }
+      ],
+      
+      "best_for": [
+        "Educational content với shocking statistics",
+        "Problem awareness videos",
+        "Cold audience chưa biết brand"
+      ],
+      
+      "timing_guide": {
+        "setup": "0-2s: Flash số percentage (large text)",
+        "deliver": "2-5s: State problem statement",
+        "hook": "5-8s: Ask question + professor concerned face"
+      },
+      
+      "visual_direction": "Text overlay với số to, màu nổi bật (red/yellow). Close-up professor face. B-roll relatable imagery.",
+      
+      "success_rate": null,
+      "total_tests": 1,
+      "avg_3s_retention": "58%",
+      
+      "constraints": [
+        "Percentage phải có source credible (mention trong body video)",
+        "Problem phải specific, không vague",
+        "Question phải personal ('anh', 'bạn'), không generic",
+        "Hook stage (0-10s): Chỉ tease solution category/mechanism. Product name xuất hiện 45-50s trong body"
+      ],
+      
+      "variations": [
+        "Reverse order: Question first, then stat",
+        "Add urgency: '{{percentage}}% và con số đang tăng'",
+        "Add time frame: '{{percentage}}% trong vòng 5 năm qua'"
+      ]
+    },
+    
+    {
+      "id": "CG-002",
+      "name": "Wrong Belief Contradiction",
+      "dopamine_technique": "Reward Prediction Error",
+      "template": "Bạn nghĩ {{common_belief}}? {{contradiction}}. {{truth_tease}}",
+      "structure": "[Common wrong belief] + [Contradiction] + [Tease real truth]",
+      
+      "variables": {
+        "common_belief": {
+          "examples": [
+            "thủ dâm gây yếu sinh lý",
+            "rụng tóc do thiếu dinh dưỡng",
+            "tập gym nhiều = testosterone cao",
+            "ăn hàu tăng cường sinh lý"
+          ],
+          "note": "Phải là belief thực sự phổ biến trong audience"
+        },
+        "contradiction": {
+          "options": ["Sai rồi", "Sai hoàn toàn", "Không đúng", "Ngược lại"],
+          "note": "Firm và confident, không wishy-washy"
+        },
+        "truth_tease": {
+          "examples": [
+            "Nguyên nhân thật sự là...",
+            "80% trường hợp do...",
+            "Thủ phạm chính là cái này"
+          ],
+          "note": "Tease nhưng chưa reveal fully"
+        }
+      },
+      
+      "examples": [
+        {
+          "filled_template": "Bạn nghĩ thủ dâm gây yếu sinh lý? Sai rồi. 90% trường hợp là do anh ngủ dưới 6 giờ/đêm.",
+          "video_id": null,
+          "performance": null,
+          "notes": "Debunk common myth, provide unexpected cause (sleep not masturbation)"
+        },
+        {
+          "topic": "Miếng dán chân - Mất ngủ",
+          "filled_template": "Bạn nghĩ mất ngủ là do não bộ? Sai 80%. Thật ra hệ tuần hoàn khí huyết bị tắc. 60 huyệt đạo ở bàn chân đang 'kêu cứu'...",
+          "notes": "✅ Myth bust → Tease mechanism (khí huyết tắc, huyệt đạo) → Không mention product",
+          "comparison_wrong": {
+            "template": "Bạn nghĩ mất ngủ do não? Sai rồi. Dùng Miếng Dán Ngải Cứu là hết ngay!",
+            "why_fails": "Product name quá sớm, không explain mechanism, feels salesy"
+          }
+        }
+      ],
+      
+      "best_for": [
+        "Myth-busting content",
+        "Educational correction",
+        "Audience có misconceptions về topic"
+      ],
+      
+      "timing_guide": {
+        "setup": "0-3s: State common belief",
+        "twist": "3-5s: Contradiction (dramatic pause after)",
+        "tease": "5-8s: Hint at real truth"
+      },
+      
+      "visual_direction": "Show common belief imagery → X mark or crossing out effect → tease new visual",
+      
+      "success_rate": null,
+      "total_tests": 0,
+      
+      "constraints": [
+        "Common belief phải truly common (not strawman)",
+        "Truth phải có evidence (cite trong body)",
+        "Không debunk chỉ để shock, phải educational value",
+        "Hook: Tease truth category, không reveal product name"
+      ],
+      
+      "variations": [
+        "Add emotional weight: 'Bạn nghĩ X? Tôi cũng từng nghĩ vậy...'",
+        "Multiple myths: 'Cả 2 đều sai. Thật ra...'",
+        "Add consequence: 'Sai rồi, và belief này đang làm anh...'"
+      ]
+    },
+    
+    {
+      "id": "PI-001",
+      "name": "Urgent Command Stop",
+      "dopamine_technique": "Pattern Interrupt + Emotional Escalation",
+      "template": "{{urgent_command}}! {{warning_statement}} {{consequence_tease}}",
+      "structure": "[Urgent command] + [Warning] + [Consequence tease]",
+      
+      "variables": {
+        "urgent_command": {
+          "options": ["DỪNG LẠI", "CHỜ ĐÃ", "NGỪNG NGAY", "CẨN THẬN"],
+          "note": "ALL CAPS, 1-2 từ, commanding tone"
+        },
+        "warning_statement": {
+          "examples": [
+            "Nếu anh đang làm điều này",
+            "Trước khi anh uống thêm viên nào",
+            "Điều anh làm mỗi sáng"
+          ],
+          "note": "Immediate relevance, creates 'wait, what?' moment"
+        },
+        "consequence_tease": {
+          "examples": [
+            "đang hủy hoại testosterone của anh",
+            "sẽ làm anh mất 'cậu nhỏ' vĩnh viễn",
+            "khiến anh già đi 10 tuổi"
+          ],
+          "note": "Specific và dramatic, không quá over-the-top"
+        }
+      },
+      
+      "examples": [
+        {
+          "filled_template": "DỪNG LẠI! Nếu anh đang uống cà phê vào buổi sáng, testosterone của anh đang giảm 25% mỗi tuần.",
+          "video_id": null,
+          "performance": null,
+          "notes": "High urgency, counterintuitive claim (coffee = common habit)"
+        },
+        {
+          "topic": "Miếng dán chân - Mất ngủ",
+          "filled_template": "DỪNG LẠI! Nếu bạn vẫn uống thuốc ngủ mỗi đêm, gan đang tổn thương im lặng. Có cách tự nhiên từ y học cổ truyền...",
+          "notes": "✅ Urgent stop → Warning (thuốc ngủ hại gan) → Tease 'cách tự nhiên' (category, not product)"
+        }
+      ],
+      
+      "best_for": [
+        "Warning content",
+        "Bad habit correction",
+        "Immediate action needed",
+        "High scroll environments"
+      ],
+      
+      "timing_guide": {
+        "command": "0-1s: Command với flash effect + loud SFX",
+        "warning": "1-4s: State what viewer might be doing",
+        "consequence": "4-8s: Reveal consequence với escalating intensity"
+      },
+      
+      "visual_direction": "Flash effect on command. Red color scheme. Fast cuts. Professor với urgent expression. SFX: Alarm or impact sound.",
+      
+      "success_rate": null,
+      "total_tests": 0,
+      
+      "constraints": [
+        "Consequence phải có basis (not pure fear-mongering)",
+        "Phải offer solution trong body (không chỉ scare)",
+        "Cẩn thận với TikTok guidelines (không quá aggressive)",
+        "Hook: Warning + consequence. Solution category tease OK. Product name ở body (45-50s)"
+      ],
+      
+      "variations": [
+        "Add time limit: 'DỪNG! Anh chỉ còn 6 tháng để...'",
+        "Add statistic: 'DỪNG! 8/10 đàn ông làm sai điều này'",
+        "Soften slightly: 'Chờ đã, trước khi anh...'"
+      ]
+    },
+    
+    {
+      "id": "EM-001",
+      "name": "Empathy Story Hook",
+      "dopamine_technique": "Emotional Mirroring",
+      "template": "{{age}} tuổi, {{relatable_situation}}. {{emotional_consequence}}. {{hope_tease}}",
+      "structure": "[Age + situation] + [Emotional impact] + [Hope hint]",
+      
+      "variables": {
+        "age": {
+          "range": "25-38",
+          "note": "Trong target demographic, tạo relatability"
+        },
+        "relatable_situation": {
+          "examples": [
+            "công việc tốt, nhưng yếu sinh lý",
+            "tập gym đều đặn, vẫn mỡ bụng",
+            "cố gắng hết sức, vợ vẫn không hài lòng"
+          ],
+          "note": "Situation audience có thể see themselves in"
+        },
+        "emotional_consequence": {
+          "examples": [
+            "Anh ấy mất tự tin hoàn toàn",
+            "Quan hệ vợ chồng rạn nứt",
+            "Cảm thấy không còn là đàn ông"
+          ],
+          "note": "Emotional, không chỉ physical consequence"
+        },
+        "hope_tease": {
+          "examples": [
+            "Cho đến khi anh ấy phát hiện ra...",
+            "Nhưng 1 thay đổi nhỏ đã...",
+            "3 tháng sau, mọi thứ hoàn toàn khác"
+          ]
+        }
+      },
+      
+      "examples": [
+        {
+          "filled_template": "28 tuổi, công việc tốt, nhưng xuất tinh sớm. Anh ấy không dám gặp gỡ ai. Cho đến khi phát hiện ra điều này...",
+          "video_id": null,
+          "performance": null,
+          "notes": "Story-based, builds empathy và curiosity. 'Điều này' = open loop (không specify product)"
+        },
+        {
+          "topic": "Miếng dán chân - Mất ngủ",
+          "filled_template": "32 tuổi, quản lý cấp trung, 3 đêm liền không ngủ. Họp sáng não như tê liệt. Sếp hỏi: 'Anh ổn không?' 3 tuần sau, mọi thứ thay đổi...",
+          "notes": "✅ Character story → Stakes (công việc risk) → Hope tease ('thay đổi' - không reveal how)"
+        }
+      ],
+      
+      "best_for": [
+        "Sensitive topics (ED, premature ejaculation)",
+        "Building deep connection",
+        "Case study style videos",
+        "Testimonial-based content"
+      ],
+      
+      "timing_guide": {
+        "setup": "0-3s: Age + situation (relatable image)",
+        "emotion": "3-6s: Emotional consequence (empathetic face)",
+        "hope": "6-10s: Tease transformation"
+      },
+      
+      "visual_direction": "B-roll of relatable scenarios. Professor với empathetic expression. Warm color grading. Soft music initially → hopeful lift.",
+      
+      "success_rate": null,
+      "total_tests": 0,
+      
+      "constraints": [
+        "Story phải feel authentic, không fabricated",
+        "Emotional consequence phải resonant (not trivial)",
+        "Phải protect anonymity (không real names/faces)",
+        "Hope tease: Hint transformation, không reveal product/method"
+      ],
+      
+      "variations": [
+        "First person: 'Tôi 32 tuổi, từng...'",
+        "Second person: 'Anh 28 tuổi, anh đang...'",
+        "Add commonality: 'Giống 70% đàn ông Việt...'"
+      ]
+    },
+    
+    {
+      "id": "VN-001",
+      "name": "Visual Journey Hook",
+      "dopamine_technique": "Visual Novelty",
+      "template": "[Visual] {{journey_description}} → {{reveal_statement}}",
+      "structure": "[Novel visual journey] + [Reveal what viewer is seeing]",
+      
+      "variables": {
+        "journey_description": {
+          "examples": [
+            "Đây là hành trình của testosterone trong cơ thể anh",
+            "Zoom vào 1 triệu lần - đây là tế bào tóc đang chết",
+            "Bên trong 'cậu nhỏ' đang xảy ra gì khi anh stress"
+          ],
+          "note": "Describe impossible/microscopic view"
+        },
+        "reveal_statement": {
+          "examples": [
+            "Và đây là lý do anh yếu đi mỗi ngày",
+            "3 thứ này đang phá hủy nó",
+            "Quá trình này mất 90 ngày để reverse"
+          ]
+        }
+      },
+      
+      "examples": [
+        {
+          "filled_template": "[AI visual - camera zooms vào cellular level] Đây là testosterone trong máu anh lúc 25 tuổi → [Visual shifts] Và đây là lúc 35 tuổi. Khác biệt kinh hoàng.",
+          "video_id": null,
+          "performance": null,
+          "notes": "Heavily visual-driven, minimal text needed. Visual novelty + age comparison tạo emotional impact"
+        },
+        {
+          "topic": "Miếng dán chân - Mất ngủ",
+          "filled_template": "[AI zoom vào bàn chân] Đây là huyệt Dũng Tuyền - cổng điều khiển giấc ngủ. [Heat wave animation] Kích hoạt đúng cách, não bộ nhận tín hiệu nghỉ ngơi trong 30 phút...",
+          "notes": "✅ Visual journey → Explain mechanism (huyệt đạo, tín hiệu) → Không mention product"
+        }
+      ],
+      
+      "best_for": [
+        "Complex scientific concepts",
+        "Abstract processes visualization",
+        "Stand out in feed (scroll stopper)",
+        "Younger audience appreciates AI aesthetics"
+      ],
+      
+      "timing_guide": {
+        "visual": "0-5s: Novel visual journey plays",
+        "voiceover": "0-5s: VO describes what viewer seeing",
+        "reveal": "5-8s: Reveal implication/consequence"
+      },
+      
+      "visual_direction": "AI-generated: Kling, Hailuo, Runway. Style: Medical illustration + sci-fi. Smooth camera moves. Hyper-detailed. Music: Ambient, mysterious.",
+      
+      "success_rate": null,
+      "total_tests": 0,
+      
+      "constraints": [
+        "Visual phải high quality (no obvious AI artifacts)",
+        "Phải relevant to message (not novelty for novelty)",
+        "Caption/VO necessary để explain visual",
+        "Visual journey explain mechanism/process, không introduce product name"
+      ],
+      
+      "variations": [
+        "Split screen: Healthy vs unhealthy side-by-side",
+        "Time-lapse: Show degradation over time",
+        "Anthropomorphic: Hormones as characters fighting"
+      ]
+    },
+    
+    {
+      "id": "AE-001",
+      "name": "Multi-Item Anticipation",
+      "dopamine_technique": "Anticipation Extension",
+      "template": "{{number}} {{item_type}} {{topic}}. #{{highlight_number}} sẽ {{emphasis}}",
+      "structure": "[Number promise] + [Topic] + [Tease specific item]",
+      
+      "variables": {
+        "number": {
+          "range": "3-5",
+          "note": "3-5 optimal. <3 too short, >5 too long"
+        },
+        "item_type": {
+          "options": ["dấu hiệu", "nguyên nhân", "thói quen", "cách", "bí mật", "sai lầm"],
+          "note": "Phải clear về content type"
+        },
+        "topic": {
+          "source": "Pain points or solutions từ context",
+          "examples": ["anh yếu sinh lý", "giết testosterone", "cứu 'cậu nhỏ'"]
+        },
+        "highlight_number": {
+          "note": "Usually last item (#3, #5) để tạo climax"
+        },
+        "emphasis": {
+          "options": ["shock anh", "khiến anh bất ngờ", "là quan trọng nhất", "không ai ngờ tới"]
+        }
+      },
+      
+      "examples": [
+        {
+          "filled_template": "5 thói quen đang giết testosterone của anh. #5 sẽ shock anh vì anh làm nó mỗi ngày.",
+          "video_id": null,
+          "performance": null,
+          "notes": "List format, tease last item để giữ watch time. Không reveal items trong hook"
+        },
+        {
+          "topic": "Miếng dán chân - Mất ngủ",
+          "filled_template": "3 lý do bạn mất ngủ mà bác sĩ không nói. #3 liên quan đến bàn chân và não bộ...",
+          "notes": "✅ Number list → Tease surprising item (#3 về bàn chân) → Không reveal solution/product"
+        }
+      ],
+      
+      "best_for": [
+        "Educational listicles",
+        "Multi-point content",
+        "Maintaining watch time through body",
+        "Comprehensive coverage of topic"
+      ],
+      
+      "timing_guide": {
+        "promise": "0-3s: State number of items",
+        "topic": "3-6s: What items are about",
+        "tease": "6-10s: Tease most important/shocking item"
+      },
+      
+      "visual_direction": "Text overlay showing '5 Thói Quen'. Progress indicator (1/5, 2/5...) during body. Visual countdown.",
+      
+      "success_rate": null,
+      "total_tests": 0,
+      
+      "constraints": [
+        "Phải deliver all items promised",
+        "Items phải escalate in importance/shock value",
+        "Teased item (#5) phải truly shocking/important",
+        "Hook: Promise items, không list ra items. Body: Deliver từng item một"
+      ],
+      
+      "variations": [
+        "Add urgency: '5 thói quen anh cần bỏ NGAY'",
+        "Add statistic: '5 thói quen 80% đàn ông mắc phải'",
+        "Reverse order: 'Từ tệ → tệ hại nhất'"
+      ]
+    },
+    
+    {
+      "id": "RS-001",
+      "name": "Solution Promise Hook",
+      "dopamine_technique": "Resolution Satisfaction",
+      "template": "{{problem_question}} {{solution_tease}}. Cuối video này {{specific_promise}}",
+      "structure": "[Problem as question] + [Solution exists tease] + [Specific promise]",
+      
+      "variables": {
+        "problem_question": {
+          "examples": [
+            "Tại sao anh xuất tinh sớm?",
+            "Làm sao tăng testosterone tự nhiên?",
+            "Cách nào reverse rụng tóc?"
+          ],
+          "note": "Direct question viewer wants answered"
+        },
+        "solution_tease": {
+          "examples": [
+            "Có 1 bài tập đơn giản, không cần thuốc",
+            "1 thay đổi nhỏ trong 7 ngày",
+            "Phương pháp 5 phút mỗi sáng"
+          ],
+          "note": "Simple, feasible, not miracle"
+        },
+        "specific_promise": {
+          "examples": [
+            "tôi sẽ demo chính xác cách làm",
+            "anh sẽ biết bắt đầu từ đâu",
+            "anh có thể thử ngay hôm nay"
+          ]
+        }
+      },
+      
+      "examples": [
+        {
+          "filled_template": "Tại sao anh xuất tinh sớm? Có 1 bài tập chỉ 5 phút mỗi ngày. Cuối video này tôi sẽ demo từng bước.",
+          "video_id": null,
+          "performance": null,
+          "notes": "Clear promise → must deliver trong video. Solution tease là 'bài tập' (category), not product"
+        },
+        {
+          "topic": "Miếng dán chân - Mất ngủ",
+          "filled_template": "Làm sao ngủ sâu không cần thuốc? Y học cổ truyền có phương pháp 1000 năm. Cuối video tôi sẽ chỉ cách áp dụng...",
+          "notes": "✅ Problem question → Solution category (y học cổ truyền, phương pháp) → Promise delivery"
+        }
+      ],
+      
+      "best_for": [
+        "How-to content",
+        "Solution-focused videos",
+        "Building trust (deliver on promise)",
+        "High watch-through rate goals"
+      ],
+      
+      "timing_guide": {
+        "problem": "0-3s: Ask problem question",
+        "tease": "3-6s: Hint solution exists và feasible",
+        "promise": "6-10s: Specific commitment to deliver"
+      },
+      
+      "visual_direction": "Problem imagery → shift to hope/solution visual. Professor confident expression. Text overlay emphasizing promise.",
+      
+      "success_rate": null,
+      "total_tests": 0,
+      
+      "constraints": [
+        "MUST deliver on promise (trust-critical)",
+        "Solution phải realistic (no miracle claims)",
+        "Timing: Deliver trước 50s mark (before drop-off)",
+        "Hook: Tease solution category/approach. Product name trong body delivery (45-50s)"
+      ],
+      
+      "variations": [
+        "Add timeframe: 'Trong 30 giây tiếp theo...'",
+        "Add credibility: 'Phương pháp được chứng minh lâm sàng...'",
+        "Add ease: 'Không cần thiết bị, không tốn tiền'"
+      ]
+    },
+    
+    {
+      "id": "EM-002",
+      "name": "Personal Story Transformation",
+      "dopamine_technique": "Emotional Mirroring + Anticipation Extension",
+      "template": "{{authority_figure}} {{past_context}} nói {{advice}}. Thế là tôi {{action_taken}}",
+      "structure": "[Authority + advice] + [Action taken] + [Tease transformation]",
+      
+      "variables": {
+        "authority_figure": {
+          "examples": [
+            "Người yêu cũ của tôi là PT Gym",
+            "Anh trai tôi là bác sĩ",
+            "Sếp cũ của tôi",
+            "Bạn thân làm dược sĩ"
+          ],
+          "note": "Credible source, personal connection"
+        },
+        "past_context": {
+          "examples": [
+            "trước đây",
+            "năm ngoái",
+            "khi tôi còn học đại học",
+            "hồi tôi mới quen anh ấy"
+          ],
+          "note": "Optional, adds relatability"
+        },
+        "advice": {
+          "examples": [
+            "cách nhanh nhất để có thắt eo, chính là dùng vòng lắc eo mềm",
+            "muốn tăng testosterone thì phải ngủ đủ 8 tiếng",
+            "bỏ cà phê buổi sáng sẽ cải thiện sinh lý"
+          ],
+          "note": "Specific, actionable advice"
+        },
+        "action_taken": {
+          "examples": [
+            "kiên trì lắc mỗi ngày",
+            "thay đổi hoàn toàn lịch ngủ",
+            "bỏ luôn cà phê 30 ngày"
+          ],
+          "note": "Shows commitment/effort"
+        }
+      },
+      
+      "examples": [
+        {
+          "filled_template": "Người yêu cũ trước đây của tôi là PT Gym, anh ấy nói cách nhanh nhất để có thắt eo, chính là dùng vòng lắc eo mềm, thế là tôi kiên trì lắc mỗi ngày",
+          "video_id": null,
+          "performance": null,
+          "notes": "First-person story, credible authority, open loop về transformation. Hook dừng ở action, result trong body."
+        }
+      ],
+      
+      "best_for": [
+        "Transformation content",
+        "Product review/testimonial",
+        "Before/after stories",
+        "Personal experience sharing"
+      ],
+      
+      "timing_guide": {
+        "authority": "0-3s: Introduce credible source",
+        "advice": "3-6s: State specific advice received",
+        "action": "6-8s: Show commitment to action",
+        "tease": "8-10s: 'Sau đó là...' hoặc visual hint transformation"
+      },
+      
+      "visual_direction": "B-roll of action (lắc eo, sleeping, etc). Text overlay highlighting key advice. Transition effect signaling 'transformation coming'. Music: Upbeat, hopeful.",
+      
+      "success_rate": null,
+      "total_tests": 0,
+      
+      "constraints": [
+        "Authority figure phải credible và relevant",
+        "Advice phải specific, không vague",
+        "Must show transformation/result trong body video",
+        "Personal story phải feel authentic",
+        "Hook: Authority advice + action. Không reveal product. Product mention trong body khi explain 'how'"
+      ],
+      
+      "variations": [
+        "Add skepticism: 'Lúc đầu tôi không tin, nhưng...'",
+        "Add timeframe: 'Sau 30 ngày kiên trì...'",
+        "Third person: 'Bạn tôi nghe theo lời PT...'"
+      ]
+    },
+    
+    {
+      "id": "EM-003",
+      "name": "Viral Story Warning Hook",
+      "dopamine_technique": "Emotional Mirroring + Reward Prediction Error",
+      "template": "{{timing_context}} mà {{warning_statement}}, {{story_setup}}, kết quả là {{unexpected_consequence}}, xong {{emotional_reaction}}",
+      "structure": "[Timing/urgency] + [Warning] + [Story setup] + [Unexpected result] + [Reaction]",
+      
+      "variables": {
+        "timing_context": {
+          "examples": [
+            "Cận Tết rồi",
+            "Sắp hè rồi",
+            "Trước ngày cưới 1 tuần",
+            "Trước khi đi du lịch"
+          ],
+          "note": "Creates urgency, time relevance"
+        },
+        "warning_statement": {
+          "examples": [
+            "có người dưỡng da kiểu này là không ổn chút nào đâu",
+            "có anh làm kiểu này là nguy hiểm",
+            "cách tập này sai hoàn toàn"
+          ],
+          "note": "Hook attention với warning"
+        },
+        "story_setup": {
+          "examples": [
+            "lướt TikTok thấy 1 bé gái, lén lấy bột sáng da của chị để dùng ké, sợ chị phát hiện nên chỉ dám trộn với kem dưỡng bôi mỗi chân",
+            "thấy 1 anh trên mạng, nghe PT bảo tập bụng cứ gắng sức, anh ấy tập đến khi đau nhức vẫn cố",
+            "có người nghĩ uống testosterone nhiều = khỏe, anh ấy tự mua viên uống về"
+          ],
+          "note": "Relatable story, often has mistake/misuse element"
+        },
+        "unexpected_consequence": {
+          "examples": [
+            "chân thì trắng lên hẳn, chân thì ngăm y nguyên",
+            "1 tuần sau đau lưng không đứng nổi",
+            "testosterone tự nhiên của cơ thể ngừng sản xuất luôn"
+          ],
+          "note": "Twist - result không như expect, often ironic/unfortunate"
+        },
+        "emotional_reaction": {
+          "examples": [
+            "bé lên mạng khóc lóc",
+            "anh ấy phải vào viện",
+            "giờ hối hận không kịp"
+          ],
+          "note": "Emotional payoff, creates empathy"
+        }
+      },
+      
+      "examples": [
+        {
+          "filled_template": "Cận Tết rồi mà có người dưỡng da kiểu này là không ổn chút nào đâu, lướt TikTok thấy 1 bé gái, lén lấy bột sáng da của chị để dùng ké, sợ chị phát hiện nên chỉ dám trộn với kem dưỡng bôi mỗi chân, kết quả là chân thì trắng lên hẳn, chân thì ngăm y nguyên, xong bé lên mạng khóc lóc",
+          "video_id": null,
+          "performance": null,
+          "notes": "Viral story format từ beauty niche. Relatable mistake, humorous but cautionary. Cần adapt cho men's health."
+        },
+        {
+          "topic": "Miếng dán chân - Sleep aid DIY gone wrong",
+          "filled_template": "Cận Tết mà thử nghiệm kiểu này là nguy hiểm đấy, thấy 1 anh trên mạng, nghe đâu dán tỏi vào bàn chân trị mất ngủ, anh ấy dán cả đêm, kết quả là bàn chân bỏng rộp, đau không đi được, xong phải nghỉ làm 1 tuần",
+          "notes": "✅ Cautionary story about wrong method → Educate correct approach trong body (không mention product trong hook)",
+          "adaptation_notes": "Story về DIY sai → Body explain correct mechanism (huyệt đạo, nhiệt phù hợp) → 45s introduce product as safe solution"
+        }
+      ],
+      
+      "best_for": [
+        "Cautionary content (what NOT to do)",
+        "Viral story retelling với lesson",
+        "Mistake correction content",
+        "Relatable fail stories"
+      ],
+      
+      "timing_guide": {
+        "urgency": "0-2s: Set time context",
+        "warning": "2-3s: Hook với warning",
+        "story": "3-7s: Tell story quickly",
+        "consequence": "7-9s: Reveal unexpected result",
+        "reaction": "9-10s: Emotional payoff"
+      },
+      
+      "visual_direction": "Text-heavy với dramatic reveals. Reaction shots/memes. Split screen showing consequence (trái/phải khác nhau). Music: Tense → ironic/sad drop.",
+      
+      "success_rate": null,
+      "total_tests": 0,
+      
+      "constraints": [
+        "Story phải có real-world plausibility",
+        "Consequence phải logical (not exaggerated fear-mongering)",
+        "Tone: Cautionary nhưng không mock victim",
+        "Must transition to educational correction trong body",
+        "Hook: Story về mistake. Body: Correct method/principle. Product: Ở 45-50s as proper solution"
+      ],
+      
+      "variations": [
+        "Add source credibility: 'Bác sĩ da liễu chia sẻ case này...'",
+        "Multiple stories: '3 case tương tự, tất cả đều...'",
+        "Add personal connection: 'Em gái tôi từng làm vậy...'",
+        "Adapt for men's health: 'Anh bạn tôi tự uống thuốc tăng cơ, kết quả là...'"
+      ]
+    },
+    
+    {
+      "id": "STORY-001",
+      "name": "Character Conflict Stakes",
+      "dopamine_technique": "Emotional Mirroring + Open Loop",
+      "template": "{{character_intro}} {{doing_action}} {{unexpected_problem}} {{stakes_what_at_risk}} {{cliffhanger_question}}",
+      "structure": "[Character] + [Action] + [Problem] + [Stakes] + [Unresolved tension]",
+      
+      "variables": {
+        "character_intro": {
+          "examples": [
+            "Anh Minh, 34 tuổi, giám đốc marketing",
+            "Chị Lan nhận ra chồng",
+            "Có người đàn ông"
+          ],
+          "note": "Make relatable, specific age/occupation"
+        },
+        "doing_action": {
+          "examples": [
+            "đang chuẩn bị thuyết trình quan trọng",
+            "phát hiện chồng",
+            "mỗi đêm đều"
+          ],
+          "note": "Normal activity before problem hits"
+        },
+        "unexpected_problem": {
+          "examples": [
+            "nhưng 3 đêm liền không ngủ được",
+            "ngáy to, thở không đều",
+            "tỉnh dậy 4-5 lần mỗi đêm"
+          ],
+          "note": "The conflict - unexpected disruption"
+        },
+        "stakes_what_at_risk": {
+          "examples": [
+            "Sáng hôm sau não như tê liệt",
+            "Lo anh ấy có vấn đề nghiêm trọng",
+            "Cơ thể anh ấy đang báo động điều gì đó"
+          ],
+          "note": "What's at stake - consequences"
+        },
+        "cliffhanger_question": {
+          "examples": [
+            "Điều gì đang xảy ra với cơ thể anh ấy?",
+            "Liệu còn kịp không?",
+            "3 tuần sau, mọi thứ thay đổi hoàn toàn. Nhưng tại sao?"
+          ],
+          "note": "Unresolved tension - NO answer given"
+        }
+      },
+      
+      "examples": [
+        {
+          "filled_template": "Anh Tuấn, 36 tuổi, mỗi đêm đều mất ngủ đến 3 giờ sáng. Sáng dậy như zombie, lái xe suýt gây tai nạn 2 lần. Vợ nói: 'Em sợ anh có chuyện gì'. Não bộ anh ấy đang gửi tín hiệu cảnh báo. Nhưng anh ấy không biết...",
+          "video_id": null,
+          "performance": null,
+          "notes": "✅ Pure story hook. NO product mention. Open loop: 'Tín hiệu gì?' 'Anh ấy làm gì sau đó?' Character relatable (36, family man, work pressure). Stakes high (tai nạn, vợ lo)."
+        },
+        {
+          "topic": "Miếng dán chân - Mất ngủ",
+          "filled_template": "Anh Nam, 32, quản lý cấp trung. 3 đêm trước deadline không ngủ được. Họp sáng, não tê liệt, sếp hỏi: 'Anh ổn không?' Cơ thể đang gửi tín hiệu...",
+          "notes": "✅ Story pattern: Character setup → Problem → Stakes (công việc risk) → Open question (tín hiệu gì?)",
+          "comparison_wrong": {
+            "template": "Anh Nam 32 tuổi mất ngủ. Dùng Miếng Dán Ngải Cứu thì hết ngay!",
+            "why_fails": "Không có story depth, stakes, cliffhanger. Product mention quá sớm. Không có emotional hook."
+          }
+        }
+      ],
+      
+      "best_for": [
+        "Story-driven content",
+        "Emotional connection building",
+        "Sensitive topics requiring empathy",
+        "Warm audience (followers)"
+      ],
+      
+      "timing_guide": {
+        "character": "0-2s: Introduce character (age, context)",
+        "action_problem": "2-5s: Setup → problem emerges",
+        "stakes": "5-7s: What's at risk (emotional/physical)",
+        "cliffhanger": "7-10s: Unresolved question"
+      },
+      
+      "visual_direction": "Relatable B-roll (office, driving, family). Text overlays for key dialogue. Professor NOT on screen (story focus). Music: Tense, building.",
+      
+      "success_rate": null,
+      "total_tests": 0,
+      
+      "constraints": [
+        "Character phải relatable với target audience (age, occupation từ context.md)",
+        "Problem phải specific incident, không generic",
+        "Stakes phải clear và meaningful (work, family, health)",
+        "Hook stage (0-10s): Pure story. NO solution hint. NO product mention. Maintain open loop.",
+        "Product timing: 45-50s trong body sau khi explain mechanism"
+      ],
+      
+      "variations": [
+        "Third person detailed: 'Có anh bạn tôi, 34 tuổi...'",
+        "Second person: 'Anh 32 tuổi, anh đang...'",
+        "Add time pressure: 'Còn 2 ngày đến deadline...'",
+        "Add transformation tease: '3 tuần sau, everything changed...'"
+      ]
+    },
+    
+    {
+      "id": "STORY-002",
+      "name": "Before After Mystery",
+      "dopamine_technique": "Curiosity Gap + Anticipation Extension",
+      "template": "{{before_state}} → [pause] → {{after_state}} {{time_frame}} {{mystery_tease}}",
+      "structure": "[Terrible before] + [Amazing after] + [Time] + [How? - no answer]",
+      
+      "examples": [
+        {
+          "filled_template": "3 tháng trước: Mất ngủ mãn tính, uống thuốc ngủ mỗi đêm. → Hôm nay: Ngủ sâu 7 tiếng, không cần thuốc. 90 ngày. Điều gì đã xảy ra? Câu trả lời không phải từ bệnh viện...",
+          "notes": "✅ Mystery hook. NO solution revealed trong hook. Viewer MUST watch to know 'how'. Tease: 'không phải từ bệnh viện' (hint alternative, not product)"
+        },
+        {
+          "topic": "Miếng dán chân - Mất ngủ transformation",
+          "filled_template": "Tháng 9: Anh ấy mất ngủ, thuốc ngủ không còn hiệu quả. → Tháng 12: Ngủ sâu 7-8 giờ, tỉnh dậy sảng khoái. 90 ngày. Bí mật nằm ở bàn chân...",
+          "notes": "✅ Before/after contrast → Time frame (90 days credible) → Mystery tease (bàn chân - body part hint, not product)"
+        }
+      ],
+      
+      "best_for": [
+        "Transformation stories",
+        "Before/after testimonials",
+        "Mystery/curiosity-driven content",
+        "Long-term result showcasing"
+      ],
+      
+      "timing_guide": {
+        "before": "0-3s: State terrible before state",
+        "transition": "3-4s: Visual transition (arrow, wipe)",
+        "after": "4-7s: Amazing after state",
+        "mystery": "7-10s: 'How?' question without answer"
+      },
+      
+      "visual_direction": "Split screen or transition effect. Before: Dark, troubled imagery. After: Bright, positive imagery. Text overlay emphasizing contrast. Music: Sad → uplifting.",
+      
+      "success_rate": null,
+      "total_tests": 0,
+      
+      "constraints": [
+        "Before state phải relatable và serious",
+        "After state phải realistic (không quá miracle)",
+        "Time frame phải credible (90 days OK, 3 days = suspicious)",
+        "Mystery tease: Hint category/body part/approach, KHÔNG mention product",
+        "Product reveal: Body @ 45-50s after explaining mechanism"
+      ],
+      
+      "variations": [
+        "Add specificity: 'Từ 2 tiếng ngủ → 7 tiếng'",
+        "Multiple metrics: 'Before: X, Y, Z. After: A, B, C'",
+        "Add skepticism: 'Nghe không ai tin, nhưng...'",
+        "Personal connection: 'Anh bạn tôi...'"
+      ]
+    }
+  ],
+  
+  "formula_usage_guide": {
+    "step_1": "Identify video topic and primary pain point từ context.md",
+    "step_2": "Select dopamine technique appropriate for topic (see hook_principles.md)",
+    "step_3": "Find formula(s) matching that technique",
+    "step_4": "Fill variables with YOUR specific content (learn pattern from examples, don't copy)",
+    "step_5": "Generate 2-3 variations",
+    "step_6": "Select best variation using team review",
+    "step_7": "Track performance and document in examples_hook.md",
+    
+    "critical_rule_product_timing": {
+      "hook_stage_0_10s": "Tease solution category/mechanism/body part ONLY. Ví dụ: 'huyệt đạo bàn chân', 'y học cổ truyền', 'nhiệt liệu pháp'. KHÔNG mention product name.",
+      "body_stage_10_45s": "Explain mechanism, educate why problem happens, how solution works (category level)",
+      "product_intro_45_50s": "Introduce product với context: 'Có sản phẩm tôi recommend: [Product Name]...'",
+      "rationale": "Early product mention closes dopamine loop → reduces watch time. Category tease maintains anticipation (Principle 6: Anticipation Extension from hook_principles.md)"
+    }
+  },
+  
+  "performance_tracking": {
+    "note": "Update success_rate, total_tests, avg_3s_retention fields as data accumulates",
+    "update_frequency": "After every 5 uses of formula",
+    "retirement_criteria": "If formula consistently <35% 3s retention after 10+ tests, consider retiring or major revision"
+  },
+  
+  "adding_new_formulas": {
+    "instructions": "Khi discover new proven pattern:",
+    "steps": [
+      "1. Copy structure của existing formula entry",
+      "2. Assign new ID: [Technique abbreviation]-[number] (e.g., CG-003)",
+      "3. Fill all required fields: id, name, dopamine_technique, template, structure, variables (nếu có), examples (at least 2), best_for, timing_guide, visual_direction, constraints, variations",
+      "4. Add performance data to examples array if available",
+      "5. Update metadata.total_formulas count",
+      "6. Document discovery source/inspiration trong notes field"
+    ]
+  }
+}

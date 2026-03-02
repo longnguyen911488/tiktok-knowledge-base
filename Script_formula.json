@@ -1,0 +1,463 @@
+{
+  "metadata": {
+    "file_version": "1.0",
+    "created_date": "2026-01-25",
+    "last_updated": "2026-01-25",
+    "total_formulas": 1,
+    "description": "Proven body/script formulas (10-60s) for educational and product videos. Hooks (0-10s) are defined separately in hook_formulas.json.",
+    "usage_instructions": "1. Generate hook using hook_formulas.json. 2. Choose a body formula based on Product_Include and content goal. 3. Fill phase_templates with topic-specific content. 4. Combine hook (0-10s) + body (10-60s) into a full script.",
+    "learning_approach": "AI learns from body patterns by: (1) Mapping phases (transition, chunks, phase 4, outro), (2) Using variables and examples as templates, (3) Updating performance fields after tests."
+  },
+
+  "formulas": [
+    {
+  "id": "SF-008",
+  "name": "Warning Multi-Harm Educational",
+  "category": "Educational",
+  "product_include": false,
+  "scope": "10-120s (Extended body - 4 chunks)",
+  
+  "hook_compatibility": {
+    "works_well_with": ["CG-002 (Wrong Belief Contradiction)", "PI-001 (Urgent Command)", "EM-003 (Viral Story Warning)"],
+    "note": "Works with warning/contradiction hooks that setup negative reveal"
+  },
+
+  "timing_structure": {
+    "transition": "10-15s",
+    "body_chunk_1": "15-30s",
+    "body_chunk_2": "30-50s",
+    "body_chunk_3": "50-70s",
+    "body_chunk_4": "70-90s",
+    "phase_4": "90-110s",
+    "outro": "110-120s",
+    "total_duration": "120s",
+    "note": "Extended structure - 4 chunks thay vì 3 standard. Risk: retention drop after 60s."
+  },
+
+  "psychology_applied": {
+    "trust_ladder_levels": [1, 2, 3, 4],
+    "information_chunks": 4,
+    "open_loop_strategy": "Hook opens 'dark side' mystery → Body reveals multiple harms progressively → Phase 4 corrects root misconception → Outro authority appeal closes",
+    "dopamine_maintenance": ["Reward Prediction Error (contradict belief)", "Authority Appeal", "Fear Appeal (stacked harms)", "Progressive Disclosure"]
+  },
+
+  "phase_templates": {
+    "transition_10_15s": {
+      "template": "Tôi hy vọng clip này trending vì tôi thấy [audience_behavior_problem]. [Observation_evidence].",
+      "variables": {
+        "audience_behavior_problem": {
+          "examples": ["các bạn đang có dấu hiệu lạm dụng", "mọi người dùng sai cách", "anh em đang làm hại bản thân"],
+          "note": "Specific problematic behavior observed"
+        },
+        "observation_evidence": {
+          "examples": ["Lướt đâu cũng thấy bạn dùng tràn lan", "10 video thì 8 video sai", "Comment toàn hỏi về này"],
+          "note": "Evidence của widespread problem"
+        }
+      },
+      "example": "Tôi hy vọng clip này trending vì tôi thấy dấu hiệu các bạn đang lạm dụng. Lướt đâu cũng thấy dùng tràn lan."
+    },
+    
+    "body_chunk_1_15_30s": {
+      "theme": "What is it (Scientific explanation)",
+      "template": "[Substance] thực ra chỉ là [common_name_type]. Thành phần chính là [scientific_ingredient]. [Scientific_classification]. [Properties_question].",
+      "variables": {
+        "substance": {"examples": ["Povidin", "Retinol", "Minoxidil", "Finasteride"]},
+        "scientific_ingredient": {"examples": ["povidone iodine", "tretinoin", "minoxidil 5%"]},
+        "scientific_classification": {"examples": ["Thuộc nhóm halogen", "Dẫn xuất vitamin A", "Thuốc giãn mạch"]},
+        "properties_question": {"examples": ["Đặc tính nhóm halogen là gì?", "Tại sao phải thận trọng?", "Cơ chế nào nguy hiểm?"]}
+      },
+      "example": "Povidin thực ra chỉ là tên thương mại. Thành phần chính là povidone iodine. Thuộc nhóm halogen. Đặc tính nhóm halogen là gì mà phải dùng cẩn thận?"
+    },
+    
+    "body_chunk_2_30_50s": {
+      "theme": "How it works (Mechanism)",
+      "template": "Cơ chế hoạt động của [substance] là [mechanism_brief]. Đặc biệt là [unique_property]. [Spectrum_description] - [list_effects].",
+      "variables": {
+        "mechanism_brief": {"examples": ["giải phóng iodine dần dần để diệt khuẩn", "tăng tốc độ tái tạo tế bào", "giãn mạch máu ở nang tóc"]},
+        "unique_property": {"examples": ["phổ tác dụng rất rộng", "thâm nhập sâu vào da", "tác động lên receptor"]},
+        "spectrum_description": {"examples": ["Diệt được từ vi khuẩn MRSA đến nấm", "Tác động cả lên collagen và melanin", "Ảnh hưởng cả DHT và testosterone"]}
+      },
+      "example": "Cơ chế là giải phóng iodine diệt khuẩn. Đặc biệt phổ rất rộng. Diệt được từ MRSA, nấm, đến bào tử."
+    },
+    
+    "body_chunk_3_50_70s": {
+      "theme": "Harm #1 (Primary consequence)",
+      "template": "Da có hệ sinh thái [ecosystem_description]. Khi bạn [prolonged_use_action], bạn đang [destruction_process]. Kết quả là [barrier_loss]. Da sẽ [symptom_1], [symptom_2], [symptom_3].",
+      "variables": {
+        "ecosystem_description": {"examples": ["vi khuẩn sống cùng nhau hòa bình", "cân bằng giữa tốt và xấu", "tự bảo vệ"]},
+        "prolonged_use_action": {"examples": ["dùng liên tục hàng ngày", "bôi tràn lan", "lạm dụng"]},
+        "destruction_process": {"examples": ["giết cả vi khuẩn tốt lẫn xấu", "phá hủy hàng rào bảo vệ", "làm mất cân bằng"]},
+        "symptoms": {"examples": ["khô", "căng", "bỏng rát khi bôi gì cũng đau"]}
+      },
+      "example": "Da có hệ vi sinh cân bằng. Khi dùng mỗi ngày, bạn giết cả tốt lẫn xấu. Hàng rào mất đi. Da khô, căng, bỏng rát."
+    },
+    
+    "body_chunk_4_70_90s": {
+      "theme": "Harm #2 (Contraindications)",
+      "template": "[Authority_quote]. [Substance] có chống chỉ định với [group_1]: [condition_1]. [Group_2]: [condition_2]. [Group_3]: [condition_3]. [Warning_mechanism].",
+      "variables": {
+        "authority_quote": {"examples": ["Dược lý từng dạy: mọi thứ đều là độc tùy liều", "Y khoa luôn nhắc: liều và thời gian quyết định"]},
+        "groups": {"examples": ["người rối loạn tuyến giáp", "phụ nữ mang thai", "người suy thận", "nam giới dưới 18 tuổi"]},
+        "warning_mechanism": {"examples": ["Iodine qua sữa mẹ", "Ảnh hưởng nội tiết", "Tích lũy trong thận"]}
+      },
+      "example": "Dược lý dạy: mọi thứ là độc tùy liều. Chống chỉ định với: người giáp, phụ nữ mang thai (iodine qua sữa mẹ), suy thận."
+    },
+    
+    "phase_4_90_110s": {
+      "type": "Educational Correction (Pathogenesis)",
+      "template": "Lý do cuối - bạn cần hiểu [pathogenesis]. Không chỉ [common_cause]. Có thể [alternative_cause_1], [alternative_cause_2]. Bạn nghĩ [substance] có thể [impossible_claim]? Không được. [Bacteria_cases] giúp, nhưng [hormonal_cases] không hiệu quả.",
+      "variables": {
+        "pathogenesis": {"examples": ["cơ chế bệnh sinh của mụn", "nguyên nhân rụng tóc", "testosterone thấp"]},
+        "common_cause": {"examples": ["vi khuẩn", "dinh dưỡng", "căng thẳng"]},
+        "alternative_causes": {"examples": ["rối loạn hormone", "di truyền", "tự miễn"]},
+        "impossible_claim": {"examples": ["cân bằng nội tiết", "sửa di truyền", "tăng testosterone tự nhiên"]}
+      },
+      "example": "Cuối cùng - hiểu cơ chế mụn. Không chỉ vi khuẩn. Có thể hormone, tuyến bã. Povidin cân bằng nội tiết được? Không. Mụn do vi khuẩn thì OK, hormone thì không."
+    },
+    
+    "outro_110_120s": {
+      "template": "Vì vậy [problem] thì [professional_referral]. [Authority_appeal]. Tôi hy vọng bạn dùng [substance] cẩn thận hơn. [Severe_case_action]. Tôi là [name]. Hẹn gặp lại [next_content].",
+      "variables": {
+        "professional_referral": {"examples": ["đến bác sĩ da liễu", "tìm chuyên gia", "khám chuyên khoa"]},
+        "authority_appeal": {"examples": ["6 năm y khoa không tự nhiên", "chuyên gia học nhiều năm", "bác sĩ được đào tạo bài bản"]},
+        "severe_case_action": {"examples": ["Nếu nặng, đi khám ngay", "Tự điều trị có thể tệ hơn"]}
+      },
+      "example": "Vì vậy có mụn thì gặp bác sĩ da liễu. 6 năm y khoa không tự nhiên. Hy vọng dùng cẩn thận hơn. Nặng thì khám ngay. Tôi là Trúc. Hẹn gặp lại clip y khoa tiếp theo."
+    }
+  },
+
+  "examples": [
+    {
+      "topic": "Povidone Iodine - Dark Side",
+      "product_include": false,
+      "filled_body_script": {
+        "transition_10_15s": "Tôi hy vọng clip trending vì thấy dấu hiệu lạm dụng. Lướt đâu cũng thấy dùng tràn lan.",
+        "chunk_1_15_30s": "Povidin chỉ là tên thương mại. Thành phần povidone iodine. Thuộc nhóm halogen. Đặc tính gì mà phải cẩn thận?",
+        "chunk_2_30_50s": "Cơ chế giải phóng iodine diệt khuẩn. Phổ rộng. Diệt từ MRSA, nấm, đến bào tử.",
+        "chunk_3_50_70s": "Da có hệ vi sinh cân bằng. Dùng mỗi ngày giết cả tốt xấu. Hàng rào mất. Da khô căng bỏng rát.",
+        "chunk_4_70_90s": "Dược lý dạy: mọi thứ độc tùy liều. Chống chỉ định: giáp, mang thai, suy thận. Iodine qua sữa mẹ.",
+        "phase_4_90_110s": "Cuối - hiểu cơ chế mụn. Không chỉ vi khuẩn. Còn hormone, tuyến bã. Povidin cân bằng nội tiết? Không. Vi khuẩn OK, hormone không.",
+        "outro_110_120s": "Vì vậy có mụn gặp bác sĩ. 6 năm y khoa không tự nhiên. Dùng cẩn thận. Nặng thì khám. Tôi là Trúc. Hẹn gặp lại."
+      },
+      "video_id": null,
+      "performance": {
+        "views": null,
+        "retention": null,
+        "engagement": null
+      },
+      "classification": null,
+      "notes": "Extended 4-chunk structure. Warning-focused. Strong authority appeal. Transcript có grammar issues (likely auto-generated). Aggressive tone may reduce shareability."
+    }
+  ],
+
+  "comparison_wrong": {
+    "filled_body_script": {
+      "transition": "Povidin rất tốt cho mụn! Mọi người nên dùng!",
+      "chunk_3": "Dùng mỗi ngày da sẽ sạch mụn hoàn toàn!"
+    },
+    "why_fails": "Contradict hook (nói dark side nhưng recommend sử dụng). Không deliver on promise. Mất trust."
+  },
+
+  "best_for": [
+    "Warning/cautionary content about substance abuse",
+    "Correcting widespread misconceptions",
+    "Professional authority establishment",
+    "Complex topics needing multi-angle explanation (4 chunks)",
+    "Medical/scientific topics với contraindications"
+  ],
+
+  "avoid_for": [
+    "Simple topics (overkill with 4 chunks)",
+    "Conversion/product content (too long, no product fit)",
+    "Empathetic/vulnerable topics (aggressive tone inappropriate)",
+    "Audience seeking quick tips (120s too long)",
+    "Content cần high shareability (scolding tone reduces shares)"
+  ],
+
+  "constraints": [
+    "4 chunks = Risk information overload. Mỗi chunk phải clear và distinct.",
+    "120s total = Retention likely drops after 60s. Chỉ dùng khi topic requires comprehensive coverage.",
+    "Authority appeal không nên condescending ('6 years medical school not natural') - adjust tone to educate not gatekeep.",
+    "Warning content phải balance fear với empowerment - offer some actionable tip, không chỉ 'go to doctor'.",
+    "Không suitable cho brand với empathetic voice (persona.md) - requires significant tone adjustment."
+  ],
+
+  "success_rate": null,
+  "total_tests": 0,
+  
+  "adaptation_notes": {
+    "for_context_md_audience": "NOT SUITABLE as-is. Audience là nam giới 25-40 quan tâm testosterone/sinh lý, không phải skincare general. Nếu adapt:",
+    "required_changes": [
+      "Topic: Thay Povidone → substance relevant cho nam (vd: Testosterone boosters, Finasteride, Minoxidil)",
+      "Tone: Giảm aggressive, tăng empathetic (Professor Simon style)",
+      "Chunks: Compress 4→3 chunks, giảm xuống 60s",
+      "Outro: Replace 'Tôi là Trúc' → 'Nhớ lấy, làm đàn ông, khó nhất là giữ được mình'",
+      "CTA: Thay 'go to doctor' → 'Check link profile để tìm hiểu thêm' hoặc soft educational CTA"
+    ]
+  }
+},
+{
+  "id": "SF-008",
+  "name": "Phân Tích Tâm Lý - Ba Lớp Mở Màn",
+  "category": "Giáo Dục/Tâm Lý",
+  "product_include": false,
+  "scope": "10-60s (Chỉ phần Body)",
+  
+  "hook_compatibility": {
+    "works_well_with": ["CG-001 (Câu Hỏi Nghịch Lý)", "PI-001 (Góc Nhìn Gây Sốc)", "Hook dạng Câu Hỏi + Mâu Thuẫn"],
+    "note": "Cần hook gây tranh cãi hoặc có chiều sâu tâm lý, hứa hẹn tiết lộ sự thật ẩn giấu hoặc góc nhìn nghịch lý"
+  },
+
+  "timing_structure": {
+    "transition": "10-15s",
+    "body_chunk_1": "15-25s",
+    "body_chunk_2": "25-35s",
+    "body_chunk_3": "35-45s",
+    "phase_4": "45-55s",
+    "outro": "55-60s"
+  },
+
+  "psychology_applied": {
+    "trust_ladder_levels": [1, 2, 3, 4],
+    "information_chunks": 3,
+    "open_loop_strategy": "Hook hứa hẹn sự thật cấm kỵ hoặc góc nhìn nghịch lý - được truyền tải qua các tiết lộ dần dần trong mỗi chunk, với reframe cuối cùng ở Phase 4",
+    "dopamine_maintenance": [
+      "Đóng khung kiến thức cấm kỵ",
+      "Giá trị gây tranh cãi/sốc",
+      "Đảo ngược pattern (không phải X, mà là Y)",
+      "Sử dụng ngôn ngữ ẩn dụ để kéo sự tập trung",
+      "Cấu trúc tiết lộ dần dần",
+      "Chủ đề mang điện tích cảm xúc"
+    ]
+  },
+
+  "phase_templates": {
+    "transition_10_15s": {
+      "template": "Và đó không phải là [quan niệm sai]. [Frame: Về mặt sinh học/Về mặt tâm lý/Thực tế], [chủ thể] không phải đang [hành vi bề ngoài]. [Chủ thể] đang [sự thật sâu xa về bản sắc/bản thân].",
+      "variables": {
+        "misconception": {
+          "examples": ["vì anh ta tìm được người tốt hơn", "về sự phù phiếm", "điều bạn nghĩ"],
+          "note": "Lời giải thích bề ngoài mà mọi người thường nghĩ"
+        },
+        "frame": {
+          "examples": ["Về mặt sinh học", "Về mặt tâm lý", "Thực tế", "Trong thực tế"],
+          "note": "Tín hiệu thẩm quyền/độ tin cậy"
+        },
+        "surface_behavior": {
+          "examples": ["tìm một người phụ nữ mới", "cố gắng trở nên xinh đẹp", "tìm kiếm sự chú ý"],
+          "note": "Những gì nó có vẻ như"
+        },
+        "deeper_truth": {
+          "examples": ["tìm kiếm phiên bản đã mất của chính mình", "chạy trốn khỏi cuộc khủng hoảng bản sắc", "tìm kiếm sự xác nhận về sự tồn tại"],
+          "note": "Reframe tâm lý"
+        }
+      },
+      "example": "Và đó không phải là vì anh ta tìm được người tốt hơn. Về mặt sinh học, anh ta không đang tìm một người phụ nữ mới. Anh ta đang tìm kiếm phiên bản đã mất của chính mình."
+    },
+    
+    "body_chunk_1_15_25s": {
+      "theme": "Sự Biến Đổi/Mất Mát - Cái gì đã thay đổi và cái gì đã chết",
+      "template": "Bạn thấy đấy, [giai đoạn cuộc sống/vai trò/sự kiện] biến [chủ thể] thành [danh sách ẩn dụ khử nhân tính]. Ở đâu đó trong [tình huống tiêu cực] đó, [bản sắc cốt lõi] chết đi. Phần của [chủ thể] từng cảm thấy [phẩm chất tích cực] dần phai nhạt.",
+      "variables": {
+        "life_stage": {
+          "examples": ["hôn nhân và làm cha", "sự nghiệp công ty", "làm mẹ", "lão hóa"],
+          "note": "Trigger gây ra sự biến đổi"
+        },
+        "dehumanizing_metaphor": {
+          "examples": ["cỗ máy, trụ cột tài chính, người giải quyết vấn đề", "người biểu diễn, người làm hài lòng mọi người", "người chăm sóc, công nhân vô hình"],
+          "note": "Chuỗi 3+ vai trò chức năng tước bỏ bản sắc"
+        },
+        "core_identity": {
+          "examples": ["thợ săn", "nghệ sĩ", "con người hoang dã", "người mơ mộng"],
+          "note": "Bản ng아mình bị mất được lãng mạn hóa"
+        },
+        "positive_qualities": {
+          "examples": ["hoang dã và được khao khát", "sáng tạo và tự do", "mạnh mẽ và sống động"],
+          "note": "Những gì bản sắc đã mất mang lại"
+        }
+      },
+      "example": "Bạn thấy đấy, hôn nhân và làm cha biến đàn ông thành cỗ máy, trụ cột tài chính, người giải quyết vấn đề, những chiến binh thầm lặng bị chôn vùi dưới nghĩa vụ và kỳ vọng. Ở đâu đó trong cái vòng xoay đó, thợ săn chết đi. Phần của anh ta từng cảm thấy hoang dã và được khao khát dần phai nhạt."
+    },
+    
+    "body_chunk_2_25_35s": {
+      "theme": "Giải Pháp Giả - Những gì họ tìm kiếm và nó tượng trưng cho điều gì",
+      "template": "Xuất hiện [hành vi/người/sản phẩm]. [Nó/Họ] không phải là [điều mọi người nghĩ]. [Nó/Họ] là [ẩn dụ]. Khi [chủ thể] [tương tác với nó/họ], [chủ thể] không thấy [nghĩa đen]. [Chủ thể] thấy [ý nghĩa tượng trưng]. [Nó/Họ] không mang đến [thứ mong đợi]. [Nó/Họ] mang đến [nhu cầu ẩn dụ].",
+      "variables": {
+        "behavior_person_product": {
+          "examples": ["người tình bí mật", "sản phẩm skincare đắt tiền", "xe thể thao", "chế độ ăn kiêng cực đoan"],
+          "note": "Cơ chế đối phó hoặc lối thoát"
+        },
+        "what_everyone_thinks": {
+          "examples": ["sự cạnh tranh", "sự phù phiếm", "khủng hoảng tuổi trung niên", "sự nông cạn"],
+          "note": "Phán xét/cách hiểu thông thường"
+        },
+        "metaphor": {
+          "examples": ["tấm gương", "oxy", "cỗ máy thời gian", "áo giáp"],
+          "note": "Reframe tượng trưng - điều nó thực sự đại diện"
+        },
+        "symbolic_meaning": {
+          "examples": ["sự phản chiếu của người đàn ông anh ta từng là", "con người cô ấy ước cô ấy vẫn còn là", "bằng chứng họ vẫn quan trọng"],
+          "note": "Phép chiếu tâm lý"
+        },
+        "metaphorical_need": {
+          "examples": ["oxy", "sự xác nhận", "bản sắc", "lối thoát", "bằng chứng về sự tồn tại"],
+          "note": "Nhu cầu tâm lý thực sự đang được đáp ứng"
+        }
+      },
+      "example": "Xuất hiện người tình bí mật. Cô ấy không phải là sự cạnh tranh. Cô ấy là tấm gương. Khi anh ta nhìn vào cô ấy, anh ta không thấy cô ấy. Anh ta thấy sự phản chiếu của người đàn ông anh ta từng là. Cô ấy không mang đến tình yêu cho anh ta. Cô ấy mang đến oxy."
+    },
+    
+    "body_chunk_3_35_45s": {
+      "theme": "Sự Nghiện - Tại sao nó cảm thấy rất cần thiết",
+      "template": "[Nó/Họ] khiến [chủ thể] cảm thấy [trạng thái mong muốn] trở lại. [Mô tả lợi ích]. Đó là [so sánh tuyệt đối với sự nghiện]. [Nhu cầu tâm lý cụ thể]. [Chủ thể] muốn [lựa chọn ổn định] và [lựa chọn phấn khích]. Bởi vì [chủ thể] quá [khuyết điểm tính cách] để [hành động trung thực].",
+      "variables": {
+        "desired_state": {
+          "examples": ["mạnh mẽ", "trẻ trung", "sống động", "được nhìn thấy", "xứng đáng"],
+          "note": "Trạng thái cảm xúc họ đang đuổi theo"
+        },
+        "superlative_comparison": {
+          "examples": ["loại ma túy gây nghiện nhất trên trái đất", "mạnh mẽ hơn bất kỳ chất gì", "không thể cưỡng lại"],
+          "note": "Nhấn mạnh sự bắt buộc"
+        },
+        "specific_psychological_need": {
+          "examples": ["Cái tôi được xác nhận", "Bằng chứng về sự hấp dẫn", "Thoát khỏi sự tầm thường"],
+          "note": "Đặt tên cho nhu cầu cốt lõi"
+        },
+        "stability_option": {
+          "examples": ["sự ổn định của người vợ", "sự an toàn của thói quen", "sự thoải mái của điều quen thuộc"],
+          "note": "Những gì họ sẽ không buông bỏ"
+        },
+        "excitement_option": {
+          "examples": ["sự hồi hộp của người tình", "cảm giác mạnh của sự biến đổi", "sự phấn khích của điều mới lạ"],
+          "note": "Những gì họ đang đuổi theo"
+        },
+        "character_flaw": {
+          "examples": ["yếu đuối", "sợ hãi", "xấu hổ", "hèn nhát"],
+          "note": "Khoảnh khắc trung thực tàn khốc"
+        },
+        "honest_action": {
+          "examples": ["chấp nhận con người anh ta đã trở thành", "làm công việc thực sự", "đối mặt với sự thật"],
+          "note": "Những gì họ nên làm thay vào đó"
+        }
+      },
+      "example": "Cô ấy khiến anh ta cảm thấy mạnh mẽ trở lại. Tự do khỏi gánh nặng phải có trách nhiệm. Đó là loại ma túy gây nghiện nhất trên trái đất. Cái tôi được xác nhận. Anh ta muốn sự ổn định của người vợ và sự hồi hộp của người tình. Bởi vì anh ta quá yếu đuối để chấp nhận con người anh ta đã trở thành."
+    },
+    
+    "phase_4_45_55s": {
+      "type": "Kiểm Tra Thực Tế / Reframe",
+      "template": "Nhưng đó là [từ kiểm tra thực tế]. [Hành vi/thứ] là [ý nghĩa tượng trưng]. [Chủ thể] [hành vi] không phải là [động cơ bề ngoài]. Họ đang [sự thật tâm lý sâu xa về sự trốn tránh]. Thay vì [hành động lành mạnh], họ [hành động không lành mạnh].",
+      "variables": {
+        "reality_check_word": {
+          "examples": ["ảo tưởng", "ảo ảnh", "cái bẫy", "giấc mơ", "tạm thời"],
+          "note": "Phá vỡ phép thuật"
+        },
+        "symbolic_meaning": {
+          "examples": ["mang tính tượng trưng", "một phép chiếu", "một cơ chế đối phó", "sự phân tâm"],
+          "note": "Gắn nhãn chính xác cho hành vi"
+        },
+        "surface_motivation": {
+          "examples": ["chạy về phía người phụ nữ khác", "tìm kiếm vẻ đẹp", "muốn sự chú ý"],
+          "note": "Những gì nó trông như bên ngoài"
+        },
+        "deeper_truth_avoidance": {
+          "examples": ["chạy trốn khỏi người đàn ông mệt mỏi trong gương", "tránh nỗi đau của sự lão hóa", "trốn tránh sự tự ghét bản thân"],
+          "note": "Gốc rễ tâm lý"
+        },
+        "healthy_action": {
+          "examples": ["sửa chữa những gì đã vỡ bên trong họ", "chấp nhận sự thay đổi", "làm công việc nội tâm"],
+          "note": "Những gì sự chữa lành thực sự đòi hỏi"
+        },
+        "unhealthy_action": {
+          "examples": ["tìm kiếm sự phân tâm", "mua giải pháp tạm thời", "đuổi theo sự xác nhận bên ngoài"],
+          "note": "Pattern trốn tránh"
+        }
+      },
+      "example": "Nhưng đó là ảo tưởng. Người tình bí mật mang tính tượng trưng. Đàn ông ngoại tình không phải đang chạy về phía người phụ nữ khác. Họ đang chạy trốn khỏi người đàn ông mệt mỏi trong gương. Thay vì sửa chữa những gì đã vỡ bên trong họ, họ tìm kiếm sự phân tâm."
+    },
+    
+    "outro_55_60s": {
+      "template": "Đó là [tính từ cảm xúc] [ẩn dụ/danh từ] bởi vì [sự thật phổ quát về sự bất khả/vô ích].",
+      "variables": {
+        "emotional_adjective": {
+          "examples": ["bi kịch", "đau đớn", "đau lòng", "vô tận", "kiệt sức"],
+          "note": "Tông điệu cảm xúc cho kết luận"
+        },
+        "metaphor_noun": {
+          "examples": ["cuộc đuổi", "vòng tròn", "nhà tù", "cuộc chiến", "trò chơi"],
+          "note": "Tóm tắt pattern"
+        },
+        "universal_truth": {
+          "examples": ["bạn không thể lừa dối để quay lại tuổi trẻ của mình", "bạn không thể mua lại thời gian đã mất", "bạn không thể trốn tránh chính mình"],
+          "note": "Cú đánh triết học - sự thật không thể chối cãi"
+        }
+      },
+      "example": "Đó là cuộc đuổi bi kịch bởi vì bạn không thể lừa dối để quay lại tuổi trẻ của mình."
+    }
+  },
+
+  "examples": [
+    {
+      "topic": "Tại sao đàn ông có người tình bí mật",
+      "product_include": false,
+      "filled_body_script": {
+        "transition_10_15s": "Và đó không phải là vì anh ta tìm được người tốt hơn. Về mặt sinh học, anh ta không đang tìm một người phụ nữ mới. Anh ta đang tìm kiếm phiên bản đã mất của chính mình.",
+        "chunk_1_15_25s": "Bạn thấy đấy, hôn nhân và làm cha biến đàn ông thành cỗ máy, trụ cột tài chính, người giải quyết vấn đề, những chiến binh thầm lặng bị chôn vùi dưới nghĩa vụ và kỳ vọng. Ở đâu đó trong cái vòng xoay đó, thợ săn chết đi. Phần của anh ta từng cảm thấy hoang dã và được khao khát dần phai nhạt.",
+        "chunk_2_25_35s": "Xuất hiện người tình bí mật. Cô ấy không phải là sự cạnh tranh. Cô ấy là tấm gương. Khi anh ta nhìn vào cô ấy, anh ta không thấy cô ấy. Anh ta thấy sự phản chiếu của người đàn ông anh ta từng là. Cô ấy không mang đến tình yêu cho anh ta. Cô ấy mang đến oxy.",
+        "chunk_3_35_45s": "Cô ấy khiến anh ta cảm thấy mạnh mẽ trở lại. Tự do khỏi gánh nặng phải có trách nhiệm. Đó là loại ma túy gây nghiện nhất trên trái đất. Cái tôi được xác nhận. Anh ta muốn sự ổn định của người vợ và sự hồi hộp của người tình. Bởi vì anh ta quá yếu đuối để chấp nhận con người anh ta đã trở thành.",
+        "phase_4_45_55s": "Nhưng đó là ảo tưởng. Người tình bí mật mang tính tượng trưng. Đàn ông ngoại tình không phải đang chạy về phía người phụ nữ khác. Họ đang chạy trốn khỏi người đàn ông mệt mỏi trong gương. Thay vì sửa chữa những gì đã vỡ bên trong họ, họ tìm kiếm sự phân tâm.",
+        "outro_55_60s": "Đó là cuộc đuổi bi kịch bởi vì bạn không thể lừa dối để quay lại tuổi trẻ của mình."
+      },
+      "video_id": "[chưa cung cấp]",
+      "performance": {
+        "views": null,
+        "retention": null,
+        "engagement": null
+      },
+      "classification": null,
+      "notes": "Ví dụ gốc - tâm lý học quan hệ giới tính"
+    }
+  ],
+
+  "comparison_wrong": {
+    "filled_body_script": {
+      "transition_10_15s": "Thực ra, nó đơn giản - anh ta chỉ muốn sự đa dạng và phấn khích.",
+      "chunk_1_15_25s": "Hôn nhân trở nên nhàm chán sau một thời gian. Cùng một người, cùng một thói quen, cùng những cuộc trò chuyện. Đàn ông cần sự mới lạ.",
+      "chunk_2_25_35s": "Người tình bí mật mang lại sự phấn khích. Cô ấy mới, cô ấy khác, cô ấy không càm ràm. Đó là sinh học tự nhiên - đàn ông được lập trình để gieo hạt giống.",
+      "phase_4_45_55s": "Vì vậy nếu bạn muốn giữ chân đàn ông của mình, bạn cần giữ mọi thứ thú vị. Thay đổi kiểu tóc, giảm cân, làm anh ta bất ngờ."
+    },
+    "why_fails": "Giữ bề ngoài suốt - không có chiều sâu tâm lý, không có ngôn ngữ ẩn dụ, không có cấu trúc tiết lộ dần dần. Cảm thấy như lời khuyên cơ bản/phán xét thay vì insight sâu sắc. Sử dụng sáo rỗng ('càm ràm,' 'gieo hạt giống') thay vì ẩn dụ độc đáo. Đổ lỗi cho người vợ ở Phase 4 thay vì tiết lộ sự thật tâm lý sâu xa hơn. Không có cung cảm xúc hoặc sự chuyển đổi trong hiểu biết."
+  },
+
+  "best_for": [
+    "Chủ đề tâm lý gây tranh cãi cần giải thích sắc thái",
+    "Động lực học quan hệ và tâm lý hành vi",
+    "Chủ đề khủng hoảng bản sắc (tuổi trung niên, sau sinh, kiệt sức nghề nghiệp)",
+    "Chủ đề tâm lý làm đẹp (tại sao chúng ta đuổi theo tuổi trẻ, tâm lý phẫu thuật thẩm mỹ, gốc rễ của nỗi ám ảnh skincare)",
+    "Giải thích về sự nghiện và hành vi cưỡng chế",
+    "Chủ đề mà phán xét bề ngoài phổ biến nhưng sự thật sâu xa tồn tại"
+  ],
+
+  "avoid_for": [
+    "Chủ đề cần giải pháp/sản phẩm có thể hành động",
+    "Nội dung giáo dục cần hướng dẫn từng bước",
+    "Chủ đề mà tranh cãi sẽ gây hại cho thương hiệu",
+    "Khi khán giả cần hy vọng/lạc quan hơn là sự thật tàn khốc",
+    "Nội dung thông tin đơn giản không có độ phức tạp tâm lý"
+  ],
+
+  "constraints": [
+    "Đòi hỏi khả năng viết ẩn dụ/văn học mạnh",
+    "Không phù hợp cho bán sản phẩm trực tiếp (có thể điều chỉnh với phase giải pháp)",
+    "Có thể quá triết học cho khán giả tìm kiếm mẹo nhanh",
+    "Đòi hỏi chủ đề gây tranh cãi hoặc phức tạp về mặt tâm lý",
+    "Cần insight xác thực - không thể giả chiều sâu",
+    "Giọng nói phải có thẩm quyền nhưng không thuyết giáo",
+    "Rủi ro làm xa lánh một phần khán giả với cách đóng khung gây tranh cãi"
+  ],
+
+  "success_rate": null,
+  "total_tests": 0
+}
+
+  ]
+}
